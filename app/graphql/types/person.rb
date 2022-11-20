@@ -21,4 +21,10 @@ class Types::Person < Types::BaseObject
   field :seller, Types::Seller,
         null: false,
         description: 'Seller.'
+
+  def city
+    dataloader
+      .with(Sources::ActiveRecordObject, City)
+      .load(object.city_id)
+  end
 end
