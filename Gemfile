@@ -48,3 +48,7 @@ end
 
 
 gem "graphql", "2.0.15"
+
+group :development, :test do
+  gem "rspec-rails", "6.0.1"
+end

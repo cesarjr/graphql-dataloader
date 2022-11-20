@@ -22,6 +22,8 @@ class Types::Person < Types::BaseObject
         null: false,
         description: 'Seller.'
 
+  # comment the lines below if you want to see
+  # the specs passing.
   def city
     dataloader
       .with(Sources::ActiveRecordObject, City)

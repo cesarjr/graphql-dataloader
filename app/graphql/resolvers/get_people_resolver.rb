@@ -4,6 +4,6 @@ class Resolvers::GetPeopleResolver < GraphQL::Schema::Resolver
   type [Types::Person], null: false
 
   def resolve
-    Person.all
+    Person.order(:name)
   end
 end
