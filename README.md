@@ -1,24 +1,14 @@
-# README
+# Possible bug in dataloader
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+When dataloader is used in a type, the order of resulted fields pass to be different than the requested one.
 
-Things you may want to cover:
+This small app shows it.
 
-* Ruby version
+# How to run
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+$ bundle install
+$ bin/rails db:create
+$ bin/rails db:migrate
+$ bin/rspec
+```
